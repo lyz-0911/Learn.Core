@@ -1,0 +1,12 @@
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\bin\Debug\net6.0\Learn.Core.Common.deps.json
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\bin\Debug\net6.0\Learn.Core.Common.dll
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\bin\Debug\net6.0\Learn.Core.Common.pdb
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.csproj.AssemblyReference.cache
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.AssemblyInfoInputs.cache
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.AssemblyInfo.cs
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.csproj.CoreCompileInputs.cache
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.dll
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\refint\Learn.Core.Common.dll
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\Learn.Core.Common.pdb
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Common\obj\Debug\net6.0\ref\Learn.Core.Common.dll

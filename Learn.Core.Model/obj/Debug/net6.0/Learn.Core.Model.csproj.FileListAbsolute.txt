@@ -1,0 +1,14 @@
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.csproj.AssemblyReference.cache
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.AssemblyInfoInputs.cache
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.AssemblyInfo.cs
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.csproj.CoreCompileInputs.cache
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\bin\Debug\net6.0\Learn.Core.Model.deps.json
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\bin\Debug\net6.0\Learn.Core.Model.dll
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\bin\Debug\net6.0\Learn.Core.Model.pdb
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\bin\Debug\net6.0\Learn.Core.Model.xml
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.dll
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\refint\Learn.Core.Model.dll
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.xml
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\Learn.Core.Model.pdb
+F:\GitHub\Learn.Core\Learn.Core\Learn.Core.Model\obj\Debug\net6.0\ref\Learn.Core.Model.dll
