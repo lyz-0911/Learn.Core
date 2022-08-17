@@ -4,6 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Learn.Core.IServices\Learn.Core.IServices.csproj" />
+    <ProjectReference Include="..\Learn.Core.Repository\Learn.Core.Repository.csproj" />
+  </ItemGroup>
 
 </Project>

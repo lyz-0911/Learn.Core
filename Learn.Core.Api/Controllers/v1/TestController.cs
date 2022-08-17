@@ -2,6 +2,7 @@
 using Learn.Core.Model;
 using Learn.Core.Api.Filter;
 using static Learn.Core.Extensions.CustomApiVersion;
+using Learn.Core.IServices;
 
 namespace Learn.Core.Api.Controllers.v1
 {
@@ -13,6 +14,11 @@ namespace Learn.Core.Api.Controllers.v1
 	[ApiController]
 	public class TestController : ControllerBase
 	{
+		private readonly ITestService _testService;
+		public TestController(ITestService testService)
+		{
+			_testService=testService;
+		}
 		/// <summary>
 		/// 数据存储集合
 		/// </summary>
@@ -30,6 +36,7 @@ namespace Learn.Core.Api.Controllers.v1
 		[HttpGet]
 		public IActionResult Get()
 		{
+			_testService.ToString();
 			return new JsonResult(DataList.OrderBy(d=>d.Id));
 		}
 

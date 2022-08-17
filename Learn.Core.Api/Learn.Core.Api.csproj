@@ -17,13 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Learn.Core.Common\Learn.Core.Common.csproj" />
     <ProjectReference Include="..\Learn.Core.Extensions\Learn.Core.Extensions.csproj" />
-    <ProjectReference Include="..\Learn.Core.Model\Learn.Core.Model.csproj" />
   </ItemGroup>
 
 </Project>
