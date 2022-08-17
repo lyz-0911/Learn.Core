@@ -25,24 +25,25 @@ namespace Learn.Core.Extensions
 			services.AddSwaggerGen(c =>
 			{
 				//遍历所有版本
-				//typeof(ApiVersions).GetEnumNames().ToList().ForEach(version =>
-				//{
-				//	c.SwaggerDoc(version, new OpenApiInfo
-				//	{
-				//		Version = version,
-				//		Title = $"{ApiName} 接口文档",
-				//		Description = $"{ApiName} HTTP API {version}",
-				//		Contact = new OpenApiContact { Name = "刘永振", Email = "774056136@qq.com" },
-				//		License = new OpenApiLicense { Name = "官方文档", Url = new Uri("http://apk.neters.club/.doc/") }
-				//	});
-				//});
+				typeof(ApiVersions).GetEnumNames().ToList().ForEach(version =>
+				{
+					c.SwaggerDoc(version, new OpenApiInfo
+					{
+						Version = version,
+						Title = $"{ApiName} 接口文档",
+						Description = $"{ApiName} HTTP API {version}",
+						Contact = new OpenApiContact { Name = "刘永振", Email = "774056136@qq.com" },
+						License = new OpenApiLicense { Name = "官方文档", Url = new Uri("http://apk.neters.club/.doc/") }
+					});
+					c.OrderActionsBy(o => o.RelativePath);
+				});
 
 				try
 				{
 					var xmlApiPath = Path.Combine(basePath, "Learn.Core.Api.xml");
 					c.IncludeXmlComments(xmlApiPath, true);
 					var xmlModelPath = Path.Combine(basePath, "Learn.Core.Model.xml");
-					c.IncludeXmlComments(xmlModelPath, true);
+					c.IncludeXmlComments(xmlModelPath);
 
 				}
 				catch (Exception ex)

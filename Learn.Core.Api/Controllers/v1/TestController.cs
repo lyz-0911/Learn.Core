@@ -1,12 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Learn.Core.Model;
+using Learn.Core.Api.Filter;
+using static Learn.Core.Extensions.CustomApiVersion;
 
 namespace Learn.Core.Api.Controllers.v1
 {
 	/// <summary>
 	/// 测试v1版本
 	/// </summary>
-	[Route("api/[controller]")]
+	//[Route("api/[controller]")]
+	[CustomRoute(ApiVersions.V1, "test")]
 	[ApiController]
 	public class TestController : ControllerBase
 	{
@@ -15,9 +18,9 @@ namespace Learn.Core.Api.Controllers.v1
 		/// </summary>
 		private readonly static List<Test> DataList=new List<Test>()
 		{
-			new Test(){Id=1,Name="熊大",Age=8,Email="Xiong1@qq.com"},
-			new Test(){Id=2,Name="熊二",Age=9,Email="Xiong2@qq.com"},
-			new Test(){Id=3,Name="光头强",Age=20,Email="GuangTouqiang@qq.com"}			
+			new Test(){Id=1,Name="熊大1",Age=8,Email="Xiong1@qq.com"},
+			new Test(){Id=2,Name="熊二1",Age=9,Email="Xiosng2@qq.com"},
+			new Test(){Id=3,Name="光头强1",Age=20,Email="GuangTouqiang@qq.com"}			
 		};
 
 		/// <summary>
@@ -45,7 +48,8 @@ namespace Learn.Core.Api.Controllers.v1
 		/// <summary>
 		/// 添加一条记录
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="TestModel"></param>
+		/// <returns></returns>
 		[HttpPost]
 		public IActionResult Post([FromBody] Test TestModel)
 		{
@@ -57,7 +61,8 @@ namespace Learn.Core.Api.Controllers.v1
 		/// 修改一条记录
 		/// </summary>
 		/// <param name="id"></param>
-		/// <param name="value"></param>
+		/// <param name="TestModel"></param>
+		/// <returns></returns>
 		[HttpPut("{id}")]
 		public IActionResult Put(int id, [FromBody] Test TestModel)
 		{
