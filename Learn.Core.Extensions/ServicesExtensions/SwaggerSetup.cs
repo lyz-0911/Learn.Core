@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Learn.Core.Common;
 using static Learn.Core.Extensions.CustomApiVersion;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace Learn.Core.Extensions
 {
@@ -51,6 +52,23 @@ namespace Learn.Core.Extensions
 
 					throw ex;
 				}
+
+
+				// 开启加权小锁 使用过滤器扩展swagger生成器
+				c.OperationFilter<AddResponseHeadersFilter>();
+				c.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
+
+				// 在header中添加token，传递到后台
+				c.OperationFilter<SecurityRequirementsOperationFilter>();
+
+				//加入Jwt Bearer 认证，必须是 oauth2
+				c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+				{
+					Description = "JWT授权(数据将在请求头中进行传输) 直接在下框中输入Bearer {token}（注意两者之间是一个空格）\"",
+					Name = "Authorization",//jwt默认的参数名称
+					In = ParameterLocation.Header,//jwt默认存放Authorization信息的位置(请求头中)
+					Type = SecuritySchemeType.ApiKey //安全方案的类型
+				}); 
 			});
 
 			

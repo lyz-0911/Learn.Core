@@ -2,6 +2,7 @@
 using Learn.Core.Model;
 using Learn.Core.Api.Filter;
 using static Learn.Core.Extensions.CustomApiVersion;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Learn.Core.Api.Controllers.v2
 {
@@ -11,6 +12,7 @@ namespace Learn.Core.Api.Controllers.v2
 	//[Route("api/[controller]")]
 	[CustomRoute(ApiVersions.V2, "test")]
 	[ApiController]
+	[Authorize]
 	public class TestController : ControllerBase
 	{
 		/// <summary>

@@ -29,7 +29,7 @@ namespace Learn.Core.Extensions.Authorizations.Helpers
             {
                 new Claim(JwtRegisteredClaimNames.Jti,tokenModel.Uid),//用户ID
                 new Claim(JwtRegisteredClaimNames.Iat,new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds().ToString()),//jwt创建时间 
-                new Claim(JwtRegisteredClaimNames.Nbf,new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds().ToString()),//jwt被接受处理之前的时间
+                new Claim(JwtRegisteredClaimNames.Nbf,new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds().ToString()),//jwt生效时间
                 new Claim(JwtRegisteredClaimNames.Exp,new DateTimeOffset(DateTime.Now.AddSeconds(1000)).ToUnixTimeSeconds().ToString()),//过期时间
                 new Claim(ClaimTypes.Expiration,DateTime.Now.AddSeconds(1000).ToString()),//
                 new Claim(JwtRegisteredClaimNames.Iss,iss),//颁布者
