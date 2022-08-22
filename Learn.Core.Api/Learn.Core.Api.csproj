@@ -17,6 +17,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Learn.Core.Extensions\Learn.Core.Extensions.csproj" />
   </ItemGroup>
 

@@ -8,6 +8,7 @@ using Learn.Core.Common;
 using static Learn.Core.Extensions.CustomApiVersion;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+using log4net;
 
 namespace Learn.Core.Extensions
 {
@@ -16,6 +17,8 @@ namespace Learn.Core.Extensions
 	/// </summary>
 	public static class SwaggerSetup
 	{
+		private static readonly ILog log = LogManager.GetLogger(typeof(SwaggerSetup));
+
 		public static void AddSwaggerSetup(this IServiceCollection services)
 		{
 			if(services==null)throw new ArgumentNullException(nameof(services));
@@ -50,7 +53,7 @@ namespace Learn.Core.Extensions
 				catch (Exception ex)
 				{
 
-					throw ex;
+					log.Error("Learn.Core.xml和Learn.Core.Model.xml 丢失，请检查并拷贝。\n" + ex.Message);
 				}
 
 
