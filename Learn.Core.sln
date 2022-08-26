@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Api", "Learn.Core.Api\Learn.Core.Api.csproj", "{B7B98E21-3211-42EF-91A6-CDC6FC84BC58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.Api", "Learn.Core.Api\Learn.Core.Api.csproj", "{B7B98E21-3211-42EF-91A6-CDC6FC84BC58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Model", "Learn.Core.Model\Learn.Core.Model.csproj", "{72269420-CB75-4C2C-83C4-BA0C2CD8E8CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.Model", "Learn.Core.Model\Learn.Core.Model.csproj", "{72269420-CB75-4C2C-83C4-BA0C2CD8E8CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Services", "Learn.Core.Services\Learn.Core.Services.csproj", "{61FFA67E-E6C2-425F-BCAF-BCBDEE172A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.Services", "Learn.Core.Services\Learn.Core.Services.csproj", "{61FFA67E-E6C2-425F-BCAF-BCBDEE172A0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.IServices", "Learn.Core.IServices\Learn.Core.IServices.csproj", "{0C16C888-2260-4EED-A8BB-765D592D2D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.IServices", "Learn.Core.IServices\Learn.Core.IServices.csproj", "{0C16C888-2260-4EED-A8BB-765D592D2D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Extensions", "Learn.Core.Extensions\Learn.Core.Extensions.csproj", "{AB339725-8E46-46DB-83A7-873C2E536A4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.Extensions", "Learn.Core.Extensions\Learn.Core.Extensions.csproj", "{AB339725-8E46-46DB-83A7-873C2E536A4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Common", "Learn.Core.Common\Learn.Core.Common.csproj", "{3A2B3968-8AC9-4B60-A780-5C4087419C17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.Common", "Learn.Core.Common\Learn.Core.Common.csproj", "{3A2B3968-8AC9-4B60-A780-5C4087419C17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Repository", "Learn.Core.Repository\Learn.Core.Repository.csproj", "{AF3EABDC-B244-40BC-A30A-D08ECEA685E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Core.Repository", "Learn.Core.Repository\Learn.Core.Repository.csproj", "{AF3EABDC-B244-40BC-A30A-D08ECEA685E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Core.Data", "Learn.Core.Data\Learn.Core.Data.csproj", "{36B5B729-9B0B-4E38-A090-BFDCD962437E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{AF3EABDC-B244-40BC-A30A-D08ECEA685E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF3EABDC-B244-40BC-A30A-D08ECEA685E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF3EABDC-B244-40BC-A30A-D08ECEA685E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B5B729-9B0B-4E38-A090-BFDCD962437E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B5B729-9B0B-4E38-A090-BFDCD962437E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B5B729-9B0B-4E38-A090-BFDCD962437E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B5B729-9B0B-4E38-A090-BFDCD962437E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

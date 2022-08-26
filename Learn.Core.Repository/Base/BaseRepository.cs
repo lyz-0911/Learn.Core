@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Learn.Core.Repository.Base
+namespace Learn.Core.Repository.BASE
 {
-	public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
+	public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
 	{
 		public Task<int> Add(TEntity model)
 		{
 			throw new NotImplementedException();
 		}
 
-		public Task<bool> DeleteById(object id)
+		public Task<bool> DeleteById(object objId)
 		{
 			throw new NotImplementedException();
 		}
@@ -28,7 +28,12 @@ namespace Learn.Core.Repository.Base
 			throw new NotImplementedException();
 		}
 
-		public Task<bool> Update(TEntity model)
+		public int Sum(int i, int j)
+		{
+			return i + j;
+		}
+
+		public Task<bool> UpdateById(object objId)
 		{
 			throw new NotImplementedException();
 		}

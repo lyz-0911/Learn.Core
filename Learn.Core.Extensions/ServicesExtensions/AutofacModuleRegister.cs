@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Learn.Core.Api.AOP;
-using Learn.Core.Repository.Base;
+using Learn.Core.Repository.BASE;
 
 namespace Learn.Core.Extensions
 {
